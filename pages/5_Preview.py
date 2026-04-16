@@ -70,7 +70,7 @@ rules = st.session_state.automation_rules
 paths = st.session_state.escalation_paths
 
 if not rt and not sla and not rules and not paths:
-    st.info("Nothing configured yet. Load the Life360 example from the sidebar or use the pages to build your configuration.")
+    st.info("Nothing configured yet. Load the example config from the sidebar or use the pages to build your configuration.")
     st.stop()
 
 # -----------------------------------------------------------------------

@@ -245,7 +245,7 @@ paths = st.session_state.escalation_paths
 
 if not paths:
     st.info(
-        "No escalation paths configured. Add paths below or load the Life360 example from the sidebar."
+        "No escalation paths configured. Add paths below or load the example config from the sidebar."
     )
 
 # Edit form

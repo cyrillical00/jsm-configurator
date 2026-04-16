@@ -168,7 +168,7 @@ rules = st.session_state.automation_rules
 
 if not rules:
     st.info(
-        "No automation rules configured. Add rules below or load the Life360 example from the sidebar."
+        "No automation rules configured. Add rules below or load the example config from the sidebar."
     )
 
 # Edit form

@@ -38,7 +38,7 @@ st.caption("Download your configuration as a Confluence-paste-ready Markdown run
 st.markdown("---")
 
 if not rt and not sla and not rules and not paths:
-    st.info("Nothing configured yet. Load the Life360 example from the sidebar or use the pages to build your configuration.")
+    st.info("Nothing configured yet. Load the example config from the sidebar or use the pages to build your configuration.")
     st.stop()
 
 # Validation gate

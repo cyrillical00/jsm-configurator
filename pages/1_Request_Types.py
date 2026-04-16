@@ -158,7 +158,7 @@ request_types = st.session_state.request_types
 
 if not request_types:
     st.info(
-        "No request types configured. Click **Add Request Type** below or load the Life360 example from the sidebar."
+        "No request types configured. Click **Add Request Type** below or load the example config from the sidebar."
     )
 
 # Edit form (shown at top if editing)

@@ -17,9 +17,9 @@ Design your Jira Service Management configuration before you build it — reques
 
 ---
 
-## Load Life360 Example
+## Load Example Config
 
-The **Load Life360 Example** button pre-fills a complete JSM configuration based on the actual setup built at Life360 for a ~900-person remote org over 6 years of production use. It includes:
+The **Load Example Config** button pre-fills a complete JSM configuration for a fictional 900-person remote-first tech company (Apex Labs). It includes:
 
 - 6 request types covering access, hardware, onboarding, account, and remote access workflows
 - 4 SLA tiers (P1 through P4) with response and resolution targets for 24/7 and business-hours coverage

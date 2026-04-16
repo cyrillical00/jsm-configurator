@@ -1,9 +1,9 @@
 """
-Life360 example JSM configuration.
+Apex Labs example JSM configuration.
 
-Based on the actual JSM setup built at Life360 for a ~900-person remote org over 6 years
-of production use. Where a specific value was not recalled with certainty, a reasonable
-operational default is used and noted with a comment.
+Represents a realistic JSM setup for a ~900-person remote-first tech company.
+Where a specific value was not recalled with certainty, a reasonable operational
+default is used and noted with a comment.
 """
 
 import uuid
@@ -13,7 +13,7 @@ def _id():
     return str(uuid.uuid4())
 
 
-def get_life360_request_types():
+def get_sample_request_types():
     return [
         {
             "id": _id(),
@@ -96,7 +96,7 @@ def get_life360_request_types():
     ]
 
 
-def get_life360_sla_tiers():
+def get_sample_sla_tiers():
     return [
         {
             "id": _id(),
@@ -147,7 +147,7 @@ def get_life360_sla_tiers():
     ]
 
 
-def get_life360_automation_rules():
+def get_sample_automation_rules():
     return [
         {
             "id": _id(),
@@ -236,7 +236,7 @@ def get_life360_automation_rules():
     ]
 
 
-def get_life360_escalation_paths():
+def get_sample_escalation_paths():
     return [
         {
             "id": _id(),
@@ -324,11 +324,11 @@ def get_life360_escalation_paths():
     ]
 
 
-def load_life360_example():
-    """Return the complete Life360 example configuration as a dict."""
+def load_sample_example():
+    """Return the complete Apex Labs example configuration as a dict."""
     return {
-        "request_types": get_life360_request_types(),
-        "sla_tiers": get_life360_sla_tiers(),
-        "automation_rules": get_life360_automation_rules(),
-        "escalation_paths": get_life360_escalation_paths(),
+        "request_types": get_sample_request_types(),
+        "sla_tiers": get_sample_sla_tiers(),
+        "automation_rules": get_sample_automation_rules(),
+        "escalation_paths": get_sample_escalation_paths(),
     }

@@ -229,7 +229,7 @@ st.markdown("---")
 tiers = st.session_state.sla_tiers
 
 if not tiers:
-    st.info("No SLA tiers configured. Add tiers below or load the Life360 example from the sidebar.")
+    st.info("No SLA tiers configured. Add tiers below or load the example config from the sidebar.")
 
 # Edit form
 editing_id = st.session_state._sla_editing

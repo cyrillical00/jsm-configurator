@@ -15,7 +15,7 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-from data.defaults import load_life360_example
+from data.defaults import load_sample_example
 
 
 # -----------------------------------------------------------------------
@@ -170,21 +170,21 @@ with st.sidebar:
         "Org name (for export header)",
         value=st.session_state.get("org_name", ""),
         label_visibility="collapsed",
-        placeholder="e.g. Life360",
+        placeholder="e.g. Apex Labs",
         key="org_name_input",
     )
 
     st.markdown("---")
 
     st.markdown("**Demo**")
-    if st.button("Load Life360 Example", use_container_width=True):
-        example = load_life360_example()
+    if st.button("Load Example Config", use_container_width=True):
+        example = load_sample_example()
         st.session_state.request_types = example["request_types"]
         st.session_state.sla_tiers = example["sla_tiers"]
         st.session_state.automation_rules = example["automation_rules"]
         st.session_state.escalation_paths = example["escalation_paths"]
-        st.session_state.org_name = "Life360"
-        st.success("Life360 example loaded.")
+        st.session_state.org_name = "Apex Labs"
+        st.success("Example config loaded.")
         st.rerun()
 
     if st.button("Clear All", use_container_width=True):
@@ -223,7 +223,7 @@ with st.sidebar:
 st.title("JSM Configurator")
 st.markdown(
     "Design your Jira Service Management configuration before you build it. "
-    "Use the sidebar to load the Life360 example or start from scratch. "
+    "Use the sidebar to load the example config or start from scratch. "
     "Navigate the pages in the left sidebar to configure each area."
 )
 
@@ -263,6 +263,6 @@ st.markdown("---")
 
 if rt_count == 0 and sla_count == 0:
     st.info(
-        "No configuration loaded. Click **Load Life360 Example** in the sidebar "
+        "No configuration loaded. Click **Load Example Config** in the sidebar "
         "to see a complete 900-person remote org setup, or use the pages above to build your own."
     )
